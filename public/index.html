@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172d26">
+  <title>One Step — Make room for progress</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header><a class="brand" href="/" aria-label="One Step home"><span class="mark">↗</span> one step<span class="brand-dot">.</span></a><span class="badge">YOUR DAILY WORKSPACE</span></header>
+  <main>
+    <section class="intro"><p class="eyebrow">A LITTLE FOCUS. A LITTLE MOMENTUM.</p><h1>Big things start<br>with <em>one step.</em></h1><p class="description">Clear your mind. Write it down. Make today a little lighter.</p></section>
+    <section class="workspace" aria-label="Task manager">
+      <div class="workspace-head"><div><p class="eyebrow">LET’S MAKE PROGRESS</p><h2>Your next steps</h2></div><span id="count" class="count">Loading…</span></div>
+      <form id="task-form"><label class="sr-only" for="title">New task</label><input id="title" name="title" placeholder="What’s one thing you want to do?" maxlength="200" required autocomplete="off"><button id="add" type="submit">Add task <span aria-hidden="true">+</span></button></form>
+      <div class="toolbar"><div class="filters" role="group" aria-label="Filter tasks"><button type="button" data-filter="all" aria-pressed="true" class="selected">All tasks</button><button type="button" data-filter="active" aria-pressed="false">To do</button><button type="button" data-filter="done" aria-pressed="false">Completed</button></div><span class="save-note">Saved as you go</span></div>
+      <p id="message" role="status" aria-live="polite"></p>
+      <ul id="tasks" aria-label="Tasks"></ul>
+      <div id="empty" hidden><span class="empty-icon" aria-hidden="true">✧</span><h3>A little space for what’s next.</h3><p>Add your first task above. One step is enough.</p></div>
+      <div class="workspace-footer"><span class="status-dot"></span><span>Public demo · Tasks are shared with all visitors.</span></div>
+    </section>
+    <p class="footnote">Less overwhelm. More forward.</p>
+  </main>
+  <footer><span>ONE STEP AT A TIME</span><span>Built for a calmer kind of productive.</span></footer>
+</body>
+</html>
